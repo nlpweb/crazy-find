@@ -1,4 +1,4 @@
 crazy-find
 ==========
 
-Chrome Extension: enhanced built-in search function
+Chrome Extension: enhance built-in search function
