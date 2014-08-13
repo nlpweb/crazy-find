@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+
+  "name": "Crazy-Find",
+  "description": "An enhanced in-page search utility",
+  "version": "0.1",
+
+  // "background": { "scripts": ["jquery.min.js", "background.js"] },
+
+  "background": {
+      // "persistent":false,
+      "scripts": ["background.js"]
+  },   
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "tabs", "<all_urls>"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>", "http://*/*", "https://*/*"],
+      "css": ["css/bootstrap-btn.css", "content_style.css"],
+      "js": ["js/jquery-2.1.0.min.js", "js/bootstrap.min.js", "content_script.js"]
+    }
+  ]
+}

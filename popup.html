@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        width: 300px;
+        height: 32px;
+        overflow-x: hidden;
+        /*background: red;*/
+      }
+
+      img {
+        margin: 5px;
+        border: 2px solid black;
+        vertical-align: middle;
+        width: 75px;
+        height: 75px;
+      }
+      #crazy-find-search-wrap
+      {
+
+      }
+        #crazy-find-search-bar
+        {
+          width: 216px;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+
+          padding: 2px 4px;
+
+          outline: none;
+          border: 1px solid #aaa;
+
+          /*height: 20px;*/
+
+          font-size: 14px;
+
+          /*line-height: 20px;*/
+          /*height: 24px;*/
+        }
+        .crazy-find-search-element
+        {
+          display: inline-block;
+          height: 24px;
+        }
+    </style>
+
+    <div id="crazy-find-search-wrap">
+      <input type="text" id="crazy-find-search-bar" class="crazy-find-search-element" />
+      <div class="crazy-find-search-element"><</div>
+      <div class="crazy-find-search-element">></div>
+      <div class="crazy-find-search-element">x</div>
+    </div>
+    
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    
+    <script src="jquery.min.js"></script>
+    <script src="popup.js"></script>
+
+    
+  </head>
+  <body>
+  </body>
+</html>
+
